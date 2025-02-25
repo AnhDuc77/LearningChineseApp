@@ -32,6 +32,11 @@ const Menu = [
     name: "Liên Hệ",
     link: "/#",
   },
+  {
+    id: 44,
+    name: "Admin",
+    link: "/admin",
+  },
 ];
 
 const DropdownLinks = [
