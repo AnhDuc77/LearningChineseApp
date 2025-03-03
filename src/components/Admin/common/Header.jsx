@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Settings, LogOut } from "lucide-react";
-import logo from "../../../assets/logo.webp";
+import logo from "../../../assets/Logo/logoPinyin1.png";
 import DarkMode from "./ThemeToggle";
 
 const Header = ({ title }) => {

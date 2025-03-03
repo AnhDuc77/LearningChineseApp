@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/logo.webp";
+import Logo from "../../../assets/Logo/logoPinyin1.png";
 const SIDEBAR_ITEMS = [
   {
     name: "Thống Kê",

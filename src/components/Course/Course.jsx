@@ -1,13 +1,14 @@
 import React from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Course from "../../assets/courses/course1.jpg";
 
 // Dữ liệu mẫu cho các khóa học
 const courses = [
   {
     id: 1,
     image:
-      "https://thanhmaihsk.edu.vn/wp-content/uploads/2023/04/hoc-truc-tuyen.jpg",
+      Course,
     title: "KHÓA CƠ BẢN 4 KỸ NĂNG",
     description:
       "Đào tạo bài bản 4 kỹ năng nghe – nói, đọc – viết đạt chuẩn đầu ra theo HSK và HSKK",
@@ -23,7 +24,7 @@ const courses = [
   {
     id: 3,
     image:
-      "https://thanhmaihsk.edu.vn/wp-content/uploads/2023/04/hoc-truc-tuyen.jpg",
+    Course,
     title: "KHÓA LUYỆN THI HSKK",
     description:
       "Học viên thi đạt chuẩn HSKK trung cấp, HSKK cao cấp với số điểm cao 70+ điểm",
@@ -31,7 +32,7 @@ const courses = [
   {
     id: 4,
     image:
-      "https://thanhmaihsk.edu.vn/wp-content/uploads/2023/04/hoc-truc-tuyen.jpg",
+    Course,
     title: "KHÓA LUYỆN THI HSK",
     description:
       "Lộ trình luyện thi tinh gọn, cấp tốc. Chinh phục HSK sau 1 khóa học",
@@ -39,7 +40,7 @@ const courses = [
   {
     id: 5,
     image:
-      "https://thanhmaihsk.edu.vn/wp-content/uploads/2023/04/hoc-truc-tuyen.jpg",
+    Course,
     title: "KHÓA DOANH NGHIỆP",
     description:
       "Khóa tiếng Trung với lộ trình học thiết kế riêng theo nhu cầu của Doanh nghiệp",
@@ -47,7 +48,7 @@ const courses = [
   {
     id: 6,
     image:
-      "https://thanhmaihsk.edu.vn/wp-content/uploads/2023/04/hoc-truc-tuyen.jpg",
+    Course,
     title: "KHÓA HỌC THEO YÊU CẦU",
     description:
       "Khóa học Vip 1 kèm 1, 1 kèm 3 theo yêu cầu có thời gian học linh hoạt",

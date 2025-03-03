@@ -1,10 +1,11 @@
 import React from "react";
-import Logo from "../../assets/logo.webp";
+import Logo from "../../assets/Logo/logoPinyin1.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import DarkMode from "./DarkMode";
+import { Link } from 'react-router-dom';
 
 const Menu = [
   {
@@ -14,12 +15,12 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Khóa Học Tiếng TrungTrung",
+    name: "Thi Thử",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Lịch Khai Giảng",
+    name: "Thư Viện Đề Thi",
     link: "/#",
   },
   {
@@ -43,7 +44,7 @@ const DropdownLinks = [
   {
     id: 1,
     name: "HSK 9 Cấp",
-    link: "/#",
+    link: "/documents",
   },
   {
     id: 2,
@@ -84,12 +85,21 @@ const Navbar = ({ handleOrderPopup }) => {
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
-            <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="Logo" className="w-20" />
-              PINYIN
-              <br />
-              CENTRE
-            </a>
+            <Link 
+              to="/"
+              className="font-bold text-2xl sm:text-3xl flex items-center"
+            >
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-20 object-contain"
+              />
+              <span>
+                PINYIN
+                <br />
+                CENTRE
+              </span>
+            </Link>
           </div>
 
           {/* search bar */}
@@ -169,7 +179,7 @@ const Navbar = ({ handleOrderPopup }) => {
         </div>
       </div>
       {/* lower Navbar */}
-      <div data-aos="zoom-in" className="flex justify-center">
+      <div data-aos="zoom-in" className="flex justify-center ">
         <ul className="sm:flex hidden items-center gap-4">
           {Menu.map((data) => (
             <li key={data.id}>
